@@ -23,8 +23,8 @@ html, body {
   box-shadow: 0px 0px 10px #000;
 }
 .intro-banner-vdo-play-btn{
-  height:60px;
-  width:60px;
+  height:80px;
+  width:80px;
   position:absolute;
   top:50%;
   left:50%;
@@ -39,13 +39,13 @@ html, body {
 }
 .intro-banner-vdo-play-btn .ripple{
   position:absolute;
-  width:160px;
-  height:160px;
+  width:195px;
+  height:195px;
   z-index:-1;
   left:50%;
   top:50%;
   opacity:0;
-  margin:-80px 0 0 -80px;
+  margin:-100px 0 0 -95px;
   border-radius:100px;
   -webkit-animation:ripple 1.8s infinite;
   animation:ripple 1.8s infinite
@@ -87,11 +87,7 @@ html, body {
 /* Main Canvas element  */
 .challenge-circle {
     display: inline;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    /* transform: translate(-50%, -282%); */
-    transform: translate(-50%, -2254%);
+    /* transform: translate(-50%, -2254%); */
 }
 
 li {
@@ -148,10 +144,10 @@ text {
 }
 
 .rotate-svg-copy:nth-child(2){
-  transform: rotate(245deg);
+  transform: rotate(243deg);
   position: absolute;
-  bottom: 8px;
-  left: 6px;
+  bottom: 10px;
+  left: 3px;
 }
 
 /* Small circles for levels */
@@ -171,7 +167,7 @@ text {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 150%);
   display: none;
 }
 /* Cards For Level 1 */
@@ -186,6 +182,10 @@ text {
 }
 
 .circle:nth-child(1) {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-8%, -280%);
   background-image: radial-gradient(farthest-corner at 77% 60%, #5dec03, #308e00, #073a01);
 }
 
@@ -193,8 +193,8 @@ text {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(101%, -40%);
-    background-image: radial-gradient(farthest-corner at 65% 69%, #e4bee8, #a81fbb, #a0067f);
+    transform: translate(101%, -303%);
+    background-image: radial-gradient(farthest-corner at 62% 69%, #cccab8, #a81fbb, #a0067f);
 }
 
 .circle:nth-child(2) svg.line{
@@ -244,98 +244,126 @@ text {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(239%, 2%);
+    transform: translate(239%, -263%);
+    background-image: radial-gradient(farthest-corner at 62% 69%, #cccab8, #a81fbb, #a0067f);
+}
+
+.circle:nth-child(3) svg.line-level-3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(14%, -100%);
+}
+
+.circle:nth-child(3) ul.game-level-3 {
+  background: #ffffff;
+  width: 180px;
+  height: 220px;
+  display: flex;
+  align-items: center;
+  border-radius: 12px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(122%, -53%);
+}
+
+.circle:nth-child(3) ul.game-level-3 li.blocks {
+  background: linear-gradient(to right, #f3f3f3, white, #e8e8e8 40%, white, #f3f3f3);
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
 }
 
 .circle:nth-child(4) {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(362%, 78%);
+  transform: translate(362%, -183%);
 }
 
 .circle:nth-child(5) {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(435%, 206%);
+  transform: translate(435%, -58%);
 }
 
 .circle:nth-child(6) {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(383%, 356%);
+  transform: translate(387%, 85%);
 }
 
 .circle:nth-child(7) {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(259%, 440%);
+  transform: translate(260%, 171%);
 }
 
 .circle:nth-child(8) {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(112%, 483%);
+  transform: translate(120%, 217%);
 }
 
 .circle:nth-child(9) {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-26%, 496%);
+  transform: translate(-26%, 228%);
 }
 
 .circle:nth-child(10) {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-178%, 487%);
+  transform: translate(-168%, 213%);
 }
 
 .circle:nth-child(11) {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-329%, 449%);
+  transform: translate(-306%, 181%);
 }
 
 .circle:nth-child(12) {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-450%, 366%);
+  transform: translate(-426%, 117%);
 }
 
 .circle:nth-child(13) {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-512%, 241%);
+  transform: translate(-505%, -16%);
 }
 
 .circle:nth-child(14) {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-467%, 106%);
+  transform: translate(-468%, -170%);
 }
 
 .circle:nth-child(15) {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-351%, 16%);
+  transform: translate(-340%, -258%);
 }
 
 .circle:nth-child(16) {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-213%, -31%);
+  transform: translate(-205%, -302%);
 }
 
 /* Highlighting the small circles */
