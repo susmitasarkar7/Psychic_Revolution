@@ -150,25 +150,28 @@ text {
 .circle-position {
     height: 80px;
     width: 80px;
-    border-radius: 50%;
-    box-shadow: 0px 0px 6px #000;
-    cursor: pointer;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-27%, -328%);
-    background-image: radial-gradient(farthest-corner at 77% 60%, #5dec03, #308e00, #073a01);
+}
+
+.circle {
+  border-radius: 50%;
+  cursor: pointer;
+  display: block;
+  box-shadow: 0px 0px 6px #000;
+  background-image: radial-gradient(farthest-corner at 77% 60%, #5dec03, #308e00, #073a01);
 }
 
 /* Level 1 game */
 .level-1-game {
   width: 700px;
   height: 250px;
-  /* z-index: 9;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, 150%); */
+  transform: translate(-50%, 102%);
   display: none;
 }
 /* Cards For Level 1 */
@@ -180,6 +183,7 @@ text {
   width: 200px;
   height: 190px;
   text-align: center;
+  display: inline-block;
 }
 
 .circle-position:nth-child(2) {
@@ -187,7 +191,10 @@ text {
     top: 50%;
     left: 50%;
     transform: translate(101%, -303%);
-    background-image: radial-gradient(farthest-corner at 62% 69%, #cccab8, #a81fbb, #a0067f);
+}
+
+.circle-position:nth-child(2) .circle {
+  background-image: radial-gradient(farthest-corner at 62% 69%, #cccab8, #a81fbb, #a0067f);
 }
 
 .circle-position:nth-child(2) .pinkBg {
@@ -199,7 +206,7 @@ text {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(155%, -215%);
+  transform: translate(126%, -215%);
 }
 
 .circle-position:nth-child(2) ul.family{
@@ -243,7 +250,10 @@ text {
     top: 50%;
     left: 50%;
     transform: translate(239%, -263%);
-    background-image: radial-gradient(farthest-corner at 62% 69%, #cccab8, #a81fbb, #a0067f);
+}
+
+.circle-position:nth-child(3) .circle {
+  background-image: radial-gradient(farthest-corner at 62% 69%, #cccab8, #a81fbb, #a0067f);
 }
 
 .circle-position:nth-child(3) svg.line-level-3 {
@@ -305,12 +315,74 @@ text {
   font-size: 4rem;
   color: #00f;
 }
+/* next-step-level-3 */
+.next-step-level-3 {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background: radial-gradient(#bd81b9, #aa29ba, #a414a1);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(108%, -59%);
+}
+.space-step-level-3 {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background: radial-gradient(#dcbbaf, #ea5343, #f00);
+  border: 3px solid #000;
+  box-shadow: 0px 0px 10px #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(287%, -85%);
+}
+/* procognition-circle level-3 */
+.procognition-circle {
+  height: 24px;
+  width: 24px;
+  border-radius: 12px;
+  background: radial-gradient(#76b2d6, #587ed2, #114ab3);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-13%, 182%);
+}
 
 .circle-position:nth-child(4) {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(362%, -183%);
+}
+
+.circle-position:nth-child(4) .circle {
+  background-image: radial-gradient(farthest-corner at 62% 69%, #ff0000, #980606, #290402);
+}
+
+/* next-step-level-4 */
+.next-step-level-4 {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background: radial-gradient(#c5aa21, #d60f0f, #bd1c11);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(102%, -32%);
+}
+.space-step-level-4 {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background: radial-gradient(#dcbbaf, #ea5343, #f00);
+  border: 3px solid #000;
+  box-shadow: 0px 0px 10px #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(263%, 50%);
 }
 
 .circle-position:nth-child(5) {
@@ -320,6 +392,21 @@ text {
   transform: translate(435%, -58%);
 }
 
+.circle-position:nth-child(5) .circle {
+  background-image: radial-gradient(farthest-corner at 61% 35%, #5dec03, #308e00, #073a01);
+}
+
+.lvl-yin-yang {
+  transform: rotate(111deg);
+}
+
+.rotate-svg-yin-yang-copy {
+  transform: rotate(272deg);
+  position: absolute;
+  bottom: 10px;
+  left: 9px;
+}
+
 .circle-position:nth-child(6) {
   position: absolute;
   top: 50%;
@@ -327,11 +414,30 @@ text {
   transform: translate(387%, 85%);
 }
 
+.circle-position:nth-child(6) .circle {
+  background-image: radial-gradient(farthest-corner at 62% 69%, #cccab8, #a81fbb, #a0067f);
+}
+
+.lvl-doors {
+  transform: rotate(157deg);
+}
+
+.rotate-doors-svg-copy {
+  transform: rotate(350deg);
+  position: absolute;
+  bottom: -7px;
+  left: 14px;
+}
+
 .circle-position:nth-child(7) {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(260%, 171%);
+}
+
+.circle-position:nth-child(7) .circle {
+  background-image: radial-gradient(farthest-corner at 62% 69%, #cccab8, #a81fbb, #a0067f);
 }
 
 .circle-position:nth-child(8) {
