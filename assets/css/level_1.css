@@ -29,13 +29,9 @@ html, body {
   top:50%;
   left:50%;
   text-align:center;
-  margin:-30px 0 0 -30px;
+  margin:-40px 0 0 -40px;
   border-radius:100px;
   z-index:1
-}
-.intro-banner-vdo-play-btn i{
-  line-height:56px;
-  font-size:30px
 }
 .intro-banner-vdo-play-btn .ripple{
   position:absolute;
@@ -151,23 +147,28 @@ text {
 }
 
 /* Small circles for levels */
-.circle {
+.circle-position {
     height: 80px;
     width: 80px;
     border-radius: 50%;
     box-shadow: 0px 0px 6px #000;
     cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-27%, -328%);
+    background-image: radial-gradient(farthest-corner at 77% 60%, #5dec03, #308e00, #073a01);
 }
 
 /* Level 1 game */
 .level-1-game {
   width: 700px;
   height: 250px;
-  z-index: 9;
+  /* z-index: 9;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, 150%);
+  transform: translate(-50%, 150%); */
   display: none;
 }
 /* Cards For Level 1 */
@@ -181,15 +182,7 @@ text {
   text-align: center;
 }
 
-.circle:nth-child(1) {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-8%, -280%);
-  background-image: radial-gradient(farthest-corner at 77% 60%, #5dec03, #308e00, #073a01);
-}
-
-.circle:nth-child(2) {
+.circle-position:nth-child(2) {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -197,14 +190,19 @@ text {
     background-image: radial-gradient(farthest-corner at 62% 69%, #cccab8, #a81fbb, #a0067f);
 }
 
-.circle:nth-child(2) svg.line{
+.circle-position:nth-child(2) .pinkBg {
+  background-color: #a619ad!important;
+  background-image: radial-gradient(farthest-corner at 77% 60%, #cbc5b9, #a81fbb, #a515a2);
+}
+
+.circle-position:nth-child(2) svg.line{
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(155%, -215%);
 }
 
-.circle:nth-child(2) ul.family{
+.circle-position:nth-child(2) ul.family{
   background: #a0067f;
   width: 250px;
   height: 80px;
@@ -218,16 +216,16 @@ text {
   border: 2px solid rgb(255, 187, 0);
 }
 
-.circle:nth-child(2) ul li {
+.circle-position:nth-child(2) ul li {
   padding: 5px 0 0 0;
 }
 
-.circle:nth-child(2) ul.family .family-member {
+.circle-position:nth-child(2) ul.family .family-member {
   width: 40px;
   height: 80px;
 }
 
-.circle:nth-child(2) ul.family .family-member div.img-box {
+.circle-position:nth-child(2) ul.family .family-member div.img-box {
   background: linear-gradient(to right, #a175d2, #fde9f9, #8d5bbb);
   border: 1px solid #000;
   width: 40px;
@@ -235,12 +233,12 @@ text {
   border-radius: 12px;
 }
 
-.circle:nth-child(2) ul.family .family-member p {
+.circle-position:nth-child(2) ul.family .family-member p {
   text-align: center;
   color: #ffffff;
 }
 
-.circle:nth-child(3) {
+.circle-position:nth-child(3) {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -248,14 +246,14 @@ text {
     background-image: radial-gradient(farthest-corner at 62% 69%, #cccab8, #a81fbb, #a0067f);
 }
 
-.circle:nth-child(3) svg.line-level-3 {
+.circle-position:nth-child(3) svg.line-level-3 {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(14%, -100%);
 }
 
-.circle:nth-child(3) ul.game-level-3 {
+.circle-position:nth-child(3) ul.game-level-3 {
   background: #ffffff;
   width: 180px;
   height: 200px;
@@ -268,7 +266,7 @@ text {
   transform: translate(122%, -53%);
 }
 
-.circle:nth-child(3) ul.game-level-3 li.block {
+.circle-position:nth-child(3) ul.game-level-3 li.block {
   background: linear-gradient(to right, #f3f3f3, white, #e8e8e8 40%, white, #f3f3f3);
   width: 100%;
   height: 100%;
@@ -276,7 +274,7 @@ text {
   padding: 0;
 }
 
-.circle:nth-child(3) ul.game-level-3 li.block .symbol {
+.circle-position:nth-child(3) ul.game-level-3 li.block .symbol {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -284,7 +282,7 @@ text {
   height: 80px;
 }
 
-.circle:nth-child(3) ul.game-level-3 li.block .text {
+.circle-position:nth-child(3) ul.game-level-3 li.block .text {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -293,13 +291,13 @@ text {
   text-transform: uppercase;  
   color: #fff;
 }
-.circle:nth-child(3) ul.game-level-3 li.block .text.green {
+.circle-position:nth-child(3) ul.game-level-3 li.block .text.green {
   background: green;
 }
-.circle:nth-child(3) ul.game-level-3 li.block .text.red {
+.circle-position:nth-child(3) ul.game-level-3 li.block .text.red {
   background: red;
 }
-.circle:nth-child(3) ul.game-level-3 li.block .no {
+.circle-position:nth-child(3) ul.game-level-3 li.block .no {
   display: flex;
   justify-content: center;
   width: 100%;
@@ -308,91 +306,91 @@ text {
   color: #00f;
 }
 
-.circle:nth-child(4) {
+.circle-position:nth-child(4) {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(362%, -183%);
 }
 
-.circle:nth-child(5) {
+.circle-position:nth-child(5) {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(435%, -58%);
 }
 
-.circle:nth-child(6) {
+.circle-position:nth-child(6) {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(387%, 85%);
 }
 
-.circle:nth-child(7) {
+.circle-position:nth-child(7) {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(260%, 171%);
 }
 
-.circle:nth-child(8) {
+.circle-position:nth-child(8) {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(120%, 217%);
 }
 
-.circle:nth-child(9) {
+.circle-position:nth-child(9) {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-26%, 228%);
 }
 
-.circle:nth-child(10) {
+.circle-position:nth-child(10) {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-168%, 213%);
 }
 
-.circle:nth-child(11) {
+.circle-position:nth-child(11) {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-306%, 181%);
 }
 
-.circle:nth-child(12) {
+.circle-position:nth-child(12) {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-426%, 117%);
 }
 
-.circle:nth-child(13) {
+.circle-position:nth-child(13) {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-505%, -16%);
 }
 
-.circle:nth-child(14) {
+.circle-position:nth-child(14) {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-468%, -170%);
 }
 
-.circle:nth-child(15) {
+.circle-position:nth-child(15) {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-340%, -258%);
 }
 
-.circle:nth-child(16) {
+.circle-position:nth-child(16) {
   position: absolute;
   top: 50%;
   left: 50%;
